@@ -27,3 +27,15 @@
 4. Buatlah mini project RESTFul API Crud menggunakan Laravel/Codeigniter dengan database yg sudah kamu buat "data_form" pd nomor soal dua.
    **Dibuat menggunakan laravel 8**
     > Harapannya: kandidat mengetahui development RESTFul API
+
+#KONFIGURASI
+
+> BUAT DATABASE data_form
+> Copy file .env.example menjadi .env
+> Konfigurasi file .env sesuai dengan lokal server
+> php artisan migrate:fresh --seed
+
+> composer install
+> npm install
+
+> php artisan serve
