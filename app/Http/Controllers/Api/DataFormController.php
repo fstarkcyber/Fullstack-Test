@@ -18,7 +18,7 @@ class DataFormController extends Controller
     {
         try {
             if ($request->search) {
-                $data = DataForm::select('id, name, email')->orderBy('id', 'asc')->where('name', 'LIKE', '%' . $request->search . '%')->get();
+                $data = DataForm::select('id', 'name', 'email')->orderBy('id', 'asc')->where('name', 'LIKE', '%' . $request->search . '%')->get();
                 return response()->json($data, 200);
             }
 
